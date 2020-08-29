@@ -5,17 +5,13 @@
         <div *ngIf="matchesCategoryId(p.product_data.categories, c.id)" id='shown'>
             <div class="kind1" *ngIf="p.product_data.kind === 1">
                 <div class="smallbox">
-                    <div>
-                        <img src="https://assets.compramass.com/products/{{p.product_data.ean}}-80@3x.jpg "
-                            class="smallimg">
-                    </div>
+                    <img src="https://assets.compramass.com/products/{{p.product_data.ean}}-80@3x.jpg "
+                        class="smallimg">
                     <div class="smallDescription">
                         {{ p.product_data.name }}<br>
                         <b>{{ p.product_data.price  | currency : 'USD' : 'symbol' : '1.0-0'}}</b>
                     </div>
-                    <div>
-                        <button class="shop" type="button">Comprar</button>
-                    </div>
+                    <button class="shop" type="button">Comprar</button>
                 </div>
             </div>
             <div class="kind2" *ngIf="p.product_data.kind === 2">
@@ -25,9 +21,7 @@
                         {{ p.product_data.name }}<br>
                         <b id='price'>{{ p.product_data.price | currency : 'USD' : 'symbol' : '1.0-0' }}</b>
                     </div>
-                    <div>
-                        <button class="shop" type="button">Comprar</button>
-                    </div>
+                    <button class="shop" type="button">Comprar</button>
                 </div>
             </div>
         </div>

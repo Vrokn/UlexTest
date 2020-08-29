@@ -2,11 +2,13 @@ ul {
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     padding: 0 16px;
+    max-width: 768px;
+    margin: auto;
 }
 
 .category {
     font-size: 1.4rem;
-    color: rgb(33, 33, 248);
+    color: rgb(94, 15, 240);
 }
 
 #shown {
@@ -38,14 +40,15 @@ ul {
     width: 100%;
     min-width: 90px;
     max-width: 140px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px ;
+    padding: 4px;
 }
 
 .kind1 {
     box-shadow: 4px 4px 28px 4px rgba(204, 204, 204, 1);
     border-radius: 8px;
     width: 100%;
-    border: 1px solid rgba(190, 190, 190, 0.705);
+    border: 1px solid rgb(190, 190, 190);
     border-radius: 8px;
 }
 
@@ -71,8 +74,9 @@ ul {
     font-size: 0.9em;
 }
 
-.shop:hover {background-color: rgb(76, 114, 184)}
-
+.shop:hover {
+    background-color: rgb(76, 114, 184)
+}
 
 .smallDescription {
     margin: 1em 0;
